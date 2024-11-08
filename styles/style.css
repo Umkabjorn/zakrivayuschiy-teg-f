@@ -26,3 +26,9 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.header__title {
+  font-family: var(--accent-font, 'PressStart2P', fantasy);
+  font-weight: 400;
+  font-size: 23px;
+}

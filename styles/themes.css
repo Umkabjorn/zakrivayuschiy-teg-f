@@ -47,7 +47,7 @@
     --gradient-line-2: rgba(255, 255, 255, 0);
     --gradient-mixed-1: #007f0c;
     --gradient-mixed-2: #004306;
-  
+
     --background-image: repeating-linear-gradient(
         to left,
         var(--gradient-line-1) 0 2px,
@@ -67,12 +67,12 @@
 }
 
 :root.theme-light {
-    --main-font-weight: 400;
-    --main-font-bold-weight: 700;
+  --main-font-weight: 400;
+  --main-font-bold-weight: 700;
 
-    --background-color: #ffffff;
-    --accent-color: rgba(0, 0, 0, 1);
-    --background-image: url("../images/background.png");
+  --background-color: #ffffff;
+  --accent-color: rgba(0, 0, 0, 1);
+  --background-image: url("../images/background.png");
 
   --gradient-line-1: #d3d3d3;
   --gradient-line-2: rgba(255, 255, 255, 0);
@@ -95,4 +95,3 @@
       var(--gradient-mixed-2)
     );
 }
-
