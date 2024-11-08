@@ -1,13 +1,32 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-/*fonts*/
---main-font: 'Inter-Variable';
---accent-font: 'PressStart2P';
---main-font-weight: 400;
---main-font-bold-weight: 700;
+  /*fonts*/
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
+  --main-font-weight: 400;
+  --main-font-bold-weight: 700;
 
---background-color: #FFFFFF;
---accent-color: rgba(0, 0, 0, 1);
+  --background-color: #ffffff;
+  --accent-color: rgba(0, 0, 0, 1);
 
---background-image: 
+  --gradient-line-1: #d3d3d3;
+  --gradient-line-2: rgba(255, 255, 255, 0);
+  --gradient-mixed-1: #e7e7e7;
+  --gradient-mixed-2: #1a1a1a;
+
+  --background-image: repeating-linear-gradient(
+      to left,
+      var(--gradient-line-1) 0 2px,
+      var(--gradient-line-2) 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--gradient-line-1) 0 2px,
+      var(--gradient-line-2) 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--gradient-mixed-1) 0.01%,
+      var(--gradient-mixed-2)
+    );
 }

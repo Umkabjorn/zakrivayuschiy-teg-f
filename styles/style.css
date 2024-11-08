@@ -21,4 +21,8 @@
   font-variation-settings: "wght" var(--main-font);
   background-color: var(--background-color); 
   color: var(--accent-color);
+  background-image: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
