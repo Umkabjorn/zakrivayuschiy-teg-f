@@ -8,6 +8,7 @@
 
   --background-color: #ffffff;
   --accent-color: rgba(0, 0, 0, 1);
+  --accent-color-transp: rgba(0, 0, 0, 0.6);
 
   --gradient-line-1: #d3d3d3;
   --gradient-line-2: rgba(255, 255, 255, 0);

@@ -11,6 +11,7 @@
 
   --background-color: #000;
   --accent-color: rgba(0, 204, 20, 1);
+  --accent-color-transp: rgba(0, 204, 20, 0.6);
   --background-image: url("../images/background-green.png");
 
   --gradient-line-1: #000;
@@ -42,6 +43,7 @@
 
     --background-color: #000;
     --accent-color: rgba(0, 204, 20, 1);
+    --accent-color-transp: rgba(0, 204, 20, 0.6);
     --background-image: url("../images/background-green.png");
     --gradient-line-1: #000;
     --gradient-line-2: rgba(255, 255, 255, 0);
