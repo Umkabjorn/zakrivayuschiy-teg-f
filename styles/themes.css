@@ -13,6 +13,8 @@
   --accent-color: rgba(0, 204, 20, 1);
   --accent-color-transp: rgba(0, 204, 20, 0.6);
   --background-image: url("../images/background-green.png");
+  --button-color: rgba(0, 204, 20, 1);
+  --button-text-color: rgba(0, 204, 20, 1);
 
   --gradient-line-1: #000;
   --gradient-line-2: rgba(255, 255, 255, 0);
@@ -49,6 +51,8 @@
     --gradient-line-2: rgba(255, 255, 255, 0);
     --gradient-mixed-1: #007f0c;
     --gradient-mixed-2: #004306;
+    --button-color: rgba(0, 204, 20, 1);
+    --button-text-color: rgba(0, 204, 20, 1);
 
     --background-image: repeating-linear-gradient(
         to left,
@@ -75,6 +79,8 @@
   --background-color: #ffffff;
   --accent-color: rgba(0, 0, 0, 1);
   --background-image: url("../images/background.png");
+  --button-color: rgba(0, 0, 0, 1);
+  --button-text-color: #fff;
 
   --gradient-line-1: #d3d3d3;
   --gradient-line-2: rgba(255, 255, 255, 0);

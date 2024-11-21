@@ -55,8 +55,10 @@
 
 .theme-menu__list {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   padding-bottom: 25px;
+  font-size: 14px;
+  padding-left: 17px;
 }
 
 .theme-menu__button {
@@ -166,6 +168,7 @@
   padding: 25px;
   display: grid;
   gap: 27px;
+  font-size: var(--main-font-size);
  }
 
  .card__footer {
@@ -173,26 +176,57 @@
   justify-content: end;
   align-items: stretch;
   gap: 5px;
-  padding: 25px;
+  padding: 0px 25px 25px 25px;
  }
 
- .card__footer-button {
-  display: grid;
+ .like-button {
   border: 2px solid;
-  background: transparent;
   cursor: pointer;
   font-family: var(--accent-font); 
-  transition: border-color 0.3s ease;
   appearance: none;
-  
+  align-items: center;
+  padding: 12.5px 37px 9.5px 33px;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  background-color: var(--background-color);
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
  }
 
- .card__footer-button:focus {
+ .like-button:focus {
   outline: none;
  }
 
- .card__icon-button:focus-visible {
-  border-color: var(--accent-color, #000000);
+ .like-button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--background-color);
+  outline:none;
+}
+
+.like-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--button-color);
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.like-button:hover {
+  background-color: linear-gradient(to right, var(--background-color) 0%, var(--background-color) 100%);
+}
+
+.like-button:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+} 
+
+.card__footer-button-text {
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .heart-button {
@@ -200,5 +234,6 @@
   position: relative;
   display: flex;
   align-items: center;
+  background: none;
 }
 
