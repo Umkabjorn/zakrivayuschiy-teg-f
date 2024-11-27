@@ -112,14 +112,24 @@
   inset-inline-start: -20px;
 }
 
+
+.main {
+  display: grid;
+  justify-items: center;
+  gap: 57px;
+}
+
 .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-  background-color: var(--background-color);
   margin: 0 auto;
   max-inline-size: 700px;
+}
+
+.cards__list {
+  display: grid;
+  gap: 52px;
   border: 2px solid var(--accent-color);
+  margin-bottom: 50px;
+  background-color: var(--background-color);
 }
 
 .card__image {
@@ -235,5 +245,13 @@
   display: flex;
   align-items: center;
   background: none;
+}
+
+.heart-button:focus {
+  outline: none;
+}
+
+.heart-button:focus-visible {
+  border-color: var(--accent-color);
 }
 
