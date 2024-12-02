@@ -71,7 +71,7 @@
               <p>Место для ваших воспоминаний о начале обучения.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -103,8 +103,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -132,7 +132,7 @@
               <p>Место для ваших воспоминаний о начале первого спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -164,8 +164,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -190,7 +190,7 @@
               <p>Место для ваших воспоминаний об окончании первого спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -222,8 +222,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -250,7 +250,7 @@
               <p>Место для ваших воспоминаний о начале второго спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -282,8 +282,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -311,7 +311,7 @@
               <p>Место для ваших воспоминаний об окончании второго спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -343,8 +343,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -369,7 +369,7 @@
               <p>Место для ваших воспоминаний о начале третьего спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -401,8 +401,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -429,7 +429,7 @@
               <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -461,8 +461,8 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
@@ -493,7 +493,7 @@
               </p>
             </div>
             <div class="card__footer">
-              <button class="card__footer-button heart-button">
+              <button class="card__footer-button card__icon-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="39"
@@ -525,31 +525,33 @@
                   />
                 </svg>
               </button>
-              <button class="button card__footer-button like-button">
-                <span class="card__footer-button-text">Like</span>
+              <button class="button card__footer-button card__like-button">
+                <span class="button__text">Like</span>
               </button>
             </div>
           </article>
         </li>
       </ul>
+      <div class="button__save-element">
       <button
         class="button button__save"
         type="button"
         onclick="window.modal.showModal();"
         aria-controls="modal"
       >
-      <svg class="button__save-icon" viewBox="0 0 29 28">
-        <use href="./svg/floppy.svg#diskette"/>
+      <svg class="button__save-icon button__save-icon-small" viewBox="0 0 29 28">
+        <use href="./svg/floppy.svg#diskette" class="diskette__small"/>
       </svg>
         <span class="button__content">Сохранить на память</span>
       </button>
+    </div>
     </main>
     <dialog class="modal" id="modal">
       <div class="modal__content">
-        <svg class="button__save-icon" viewBox="0 0 29 28">
-          <use href="./svg/floppy.svg#diskette"/>
+        <svg class="button__save-icon button__save-icon-big" viewBox="0 0 39 39">
+          <use href="./svg/floppy.svg#diskette" class="diskette__big"/>
         </svg>
-        <p>Вставьте дискету,чтобы продолжить</p>
+        <p class="button__content">Вставьте<br> дискету,чтобы<br> продолжить</p>
       </div>
       <form method="dialog">
         <button type="submit" class="button modal__button">
