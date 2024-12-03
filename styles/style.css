@@ -145,6 +145,10 @@
   padding: 3px 24px 3px 10px;
 }
 
+.card__container {
+  position: relative;
+}
+
 .card__logo {
   position: absolute;
   z-index: 1;
@@ -155,9 +159,11 @@
     -1px 0 0 var(--background-color), -1px 0 0 var(--background-color),
     0 -1px 0 var(--background-color), 0 -1px 0 var(--background-color);
   opacity: 0.6;
-  inset-inline-end: 13px;
-  inset-block-start: 24px;
+  font-size: var(--accent-font-size);
+  line-height: 14px;
   text-transform: uppercase;
+  inset-inline-end: 1.73rem;
+  inset-block-start: 1.65rem;
 }
 
 @supports (
@@ -198,6 +204,8 @@
   display: inline-block;
   background-color: var(--background-color);
   padding: 12.5px 37px 9.5px 34px;
+  z-index: 1;
+  text-transform: inherit;
 }
 
 .card__like-button {
@@ -306,8 +314,8 @@
 .button__save-icon {
   fill: var(--accent-color);
   flex-shrink: 0;
-  inline-size: 23px;
-  block-size: 28px;
+  inline-size: 21px;
+  block-size: 21px;
 }
 
 .button__save-icon-big {
@@ -316,7 +324,7 @@
 }
 
 .button__save-icon-small {
-  min-width: 29px;
+  min-width: 21px;
   height: auto;
 }
 
