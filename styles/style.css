@@ -25,7 +25,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 100px;
+  padding: 100px 0;
 }
 
 .header {
@@ -40,16 +40,17 @@
   margin: 0 auto;
   max-inline-size: 700px;
   margin-bottom: 100px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__element {
-  font-size: 65px;
+  font-size: clamp(49px, 4vw + 10px, 65px);
   padding-top: 136px;
   padding-bottom: 20px;
 }
 
 .header__title {
-  font-size: 23px;
+  font-size: clamp(0.875rem, 1vw + 0.625rem, 1.4375rem);
   padding-bottom: 25px;
 }
 
@@ -162,7 +163,7 @@
   font-size: var(--accent-font-size);
   line-height: 14px;
   text-transform: uppercase;
-  inset-inline-end: 1.73rem;
+  inset-inline-end: 0.73rem;
   inset-block-start: 1.65rem;
 }
 
@@ -297,25 +298,20 @@
   z-index: -1;
 }
 
-.button__save:hover {
-  background-color: linear-gradient(
-    to right,
-    var(--background-color) 0%,
-    var(--background-color) 100%
-  );
-}
-
 .button__save:hover::before {
   width: 100%;
   transform: scaleX(1);
-  background-color: var(--button-color);
 }
 
 .button__save-icon {
-  fill: var(--accent-color);
+  color: var(--accent-color);
   flex-shrink: 0;
   inline-size: 21px;
   block-size: 21px;
+}
+
+.button__save:hover .button__save-icon {
+  color: var(--background-color);
 }
 
 .button__save-icon-big {
@@ -356,4 +352,52 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.excited-card {
+  filter: brightness(120%);
+}
+
+.multiple-card {
+  filter: sepia(140%) invert(0.3);
+}
+
+.sad-card {
+  filter: grayscale(80%);
+}
+
+.tired-card {
+  filter: hue-rotate(90deg);
+}
+
+.upset-card {
+  filter: grayscale(70%);
+}
+
+.hopeless-card {
+  filter: opacity(0.9);
+}
+
+.last-card {
+  filter: grayscale(150%);
+}
+
+@media (width < 376px) {
+  .modal {
+    padding: 28px 34px 28px 40px;
+    max-inline-size: 340px;
+  }
+
+  .button__save {
+    flex-direction: column;
+    padding: 15px;
+    width: 306px;
+    height: 80px;
+    gap: 8px;
+  }
+
+  .button__icon {
+    margin: 0 2px 0 19px;
+    block-size: 20px;
+  }
 }
