@@ -29,7 +29,7 @@
 }
 
 .header {
-  font-family: var(--accent-font, "PressStart2P", sans-serif);
+  font-family: var(--accent-font, "PressStart2P", fantasy);
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@
   font-size: var(--accent-font-size);
   line-height: 14px;
   text-transform: uppercase;
-  inset-inline-end: 0.73rem;
+  inset-inline-end: 1.62rem;
   inset-block-start: 1.65rem;
 }
 
@@ -228,7 +228,7 @@
   outline: none;
 }
 
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -289,18 +289,7 @@
   height: 55px;
   padding: 19px 16px 19px 19px;
   z-index: 1;
-}
-
-.button__save::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  background-color: var(--button-color);
-  transition: width 0.5s ease-in-out;
-  z-index: -1;
+  mix-blend-mode: difference;
 }
 
 .button__save:hover::before {
@@ -331,7 +320,6 @@
 
 .modal {
   width: 353px;
-  height: 191px;
   border: 2px solid var(--accent-color);
   padding: 25px 30px;
   font-family: var(--accent-font);
@@ -359,31 +347,35 @@
   gap: 16px;
 }
 
-.excited-card {
+.modal__button {
+  inline-size: 100%;
+}
+
+.filter-brightness {
   filter: brightness(120%);
 }
 
-.multiple-card {
+.filter-multiple {
   filter: sepia(140%) invert(0.3);
 }
 
-.sad-card {
+.filter-grayscale {
   filter: grayscale(80%);
 }
 
-.tired-card {
+.filter-hue-rotate {
   filter: hue-rotate(90deg);
 }
 
-.upset-card {
+.filter-less-grayscale {
   filter: grayscale(70%);
 }
 
-.hopeless-card {
+.filter-opacity {
   filter: opacity(0.9);
 }
 
-.last-card {
+.filter-more-grayscale {
   filter: grayscale(150%);
 }
 
@@ -401,8 +393,8 @@
     gap: 8px;
   }
 
-  .button__icon {
-    margin: 0 2px 0 19px;
-    block-size: 20px;
+  .button__save-icon {
+    inline-size: 28px;
+    block-size: 29px;
   }
 }

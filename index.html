@@ -57,7 +57,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/Норм&gt;</span>
               <img
-                class="card__image excited-card"
+                class="card__image filter-brightness"
                 src="./images/first card.jpg"
                 alt="Еще пока мотивирована"
               />
@@ -115,7 +115,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/подозрения&gt;</span>
               <img
-                class="card__image multiple-card"
+                class="card__image filter-multiple"
                 src="./images/second card.jpg"
                 alt="Ну такое"
               />
@@ -176,7 +176,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/жесть&gt;</span>
               <img
-                class="card__image sad-card"
+                class="card__image filter-grayscale"
                 src="./images/third card.png"
                 alt="Что за жесть"
               />
@@ -234,7 +234,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/Доколе?&gt;</span>
               <img
-                class="card__image tired-card"
+                class="card__image filter-hue-rotate"
                 src="./images/forth card.jpg"
                 alt="Доколе?"
               />
@@ -297,7 +297,7 @@
                 class="card__image"
                 src="./images/fifth card.jpg"
                 alt="ох"
-                class="upset-card"
+                class="filter-less-grayscale"
               />
             </div>
             <div class="card__content">
@@ -356,7 +356,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/адища&gt;</span>
               <img
-                class="card__image hopeless-card"
+                class="card__image filter-opacity"
                 src="./images/sixth card.jpg"
                 alt="Адища"
               />
@@ -414,7 +414,7 @@
             <div class="card__container">
               <span class="card__logo">&lt;/хтонь&gt;</span>
               <img
-                class="card__image last-card"
+                class="card__image filter-more-grayscale"
                 src="./images/seventh card.jpg"
                 alt="Хтонь"
               />
@@ -543,7 +543,7 @@
           >
             <use href="./svg/floppy.svg#diskette" class="diskette__small" />
           </svg>
-          <span class="button__text">Сохранить на память</span>
+          <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
         </button>
       </div>
     </main>
@@ -552,13 +552,12 @@
         <svg
           class="button__save-icon button__save-icon-big"
           viewBox="0 0 39 39"
+          aria-hidden="true"
         >
           <use href="./svg/floppy.svg#diskette" class="diskette__big" />
         </svg>
         <p class="button__text">
-          Вставьте<br />
-          дискету,чтобы<br />
-          продолжить
+          Вставьте дискету,чтобы продолжить
         </p>
       </div>
       <form method="dialog">

@@ -80,6 +80,7 @@
 
   --background-color: #ffffff;
   --accent-color: rgba(0, 0, 0, 1);
+  --accent-color-transp: rgba(0, 0, 0, 0.6);
   --background-image: url("../images/background.png");
   --button-color: rgba(0, 0, 0, 1);
   --button-text-color: #fff;
