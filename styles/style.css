@@ -110,7 +110,7 @@
   content: "▶";
   position: absolute;
   color: var(--accent-color-transp);
-  animation: moving 0.5s infinite ease-in-out reverse;
+  animation: moving 0.5s infinite ease-in-out alternate;
   inset-inline-start: -20px;
 }
 
@@ -193,8 +193,7 @@
   display: flex;
   justify-content: end;
   align-items: stretch;
-  /*gap: 5px;*/
-  padding: 3px 22px 25px 25px;
+  padding: 3px 25px 25px 25px;
   font-size: 18px;
 }
 
@@ -217,6 +216,12 @@
   background-color: var(--background-color);
   transition: all 0.2s ease-in-out;
   z-index: 1;
+}
+
+.like__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__like-button:focus {
@@ -256,7 +261,7 @@
 .button__text {
   color: var(--button-text-color);
   mix-blend-mode: difference;
-  padding-left: 5px;
+  padding-right: 2px;
 }
 
 .card__icon-button {
@@ -265,6 +270,8 @@
   display: flex;
   align-items: center;
   background: none;
+  padding: 0;
+  margin-right: 2px;
 }
 
 .card__icon-button:focus {
@@ -273,7 +280,8 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--accent-color);
-  outline: 2px solid;
+  outline: none;
+  border: 2px solid;
 }
 
 .button__save-element {
@@ -298,10 +306,11 @@
 }
 
 .button__save-icon {
-  color: var(--accent-color);
+  color: var(--background-color);
   flex-shrink: 0;
   inline-size: 21px;
   block-size: 21px;
+  mix-blend-mode: difference;
 }
 
 .button__save:hover .button__save-icon {
