@@ -216,6 +216,7 @@
   z-index: 1;
   text-transform: inherit;
   transition: all 0.2s ease-in-out;
+  mix-blend-mode: difference;
  
 }
 
