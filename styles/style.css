@@ -308,7 +308,7 @@
 }
 
 .button__save-icon {
-  color: var(--background-color);
+  color: var(--button-text-color);
   flex-shrink: 0;
   inline-size: 21px;
   block-size: 21px;
@@ -361,6 +361,22 @@
 
 .modal__button {
   inline-size: 100%;
+  z-index: 1;
+}
+
+.modul__button:focus {
+  outline: none;
+}
+
+.modul__button:focus-visible {
+  border-color: var(--accent-color);
+  outline: none;
+  border: 2px solid;
+}
+
+.modal__button:hover::before {
+  width: 100%;
+  transform: scaleX(1);
 }
 
 .filter-brightness {
