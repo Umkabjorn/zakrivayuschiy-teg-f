@@ -216,7 +216,6 @@
   z-index: 1;
   text-transform: inherit;
   transition: all 0.2s ease-in-out;
-  mix-blend-mode: difference;
  
 }
 
@@ -337,7 +336,7 @@
 }
 
 .button__save:hover .button__save-icon {
-  color: var(--background-color);
+  color: var(--button-text-color);
 }
 
 .button__save-icon-big {
