@@ -69,7 +69,7 @@
   cursor: pointer;
   text-transform: uppercase;
   position: relative;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .theme-menu__button:disabled {
@@ -215,7 +215,7 @@
   /* padding: 12.5px 37px 9.5px 34px; */
   z-index: 1;
   text-transform: inherit;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 130px;
 }
 
@@ -256,8 +256,6 @@
   mix-blend-mode: difference;
   /* text-align: center; */
 }
-
-
 
 .card__icon-button {
   border: none;
