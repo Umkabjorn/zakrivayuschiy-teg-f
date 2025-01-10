@@ -26,6 +26,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -38,7 +39,7 @@
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
   margin: 0 auto;
-  max-inline-size: 700px;
+  max-inline-size: 100%;
   margin-bottom: 100px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
@@ -143,8 +144,8 @@
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
-  height: 696px;
-  width: 696px;
+  /* height: 696px;
+  width: 696px; */
 }
 
 .card__title {
@@ -406,7 +407,7 @@
   }
 
   .card__image {
-    height: 375px;
-    width: 375px;
+      height: 100%; 
+      max-width: 100%; 
   }
 }
